@@ -15,7 +15,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.get('/')
-def some_long_route():
+def some_slow_route():
     time.sleep(3)
     return "hello world"
 ```
@@ -27,7 +27,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get('/')
-async def some_long_route():
+async def some_slow_route():
     await asyncio.sleep(3)
     return 'hello world'
 ```
