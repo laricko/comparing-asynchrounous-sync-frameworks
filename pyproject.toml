@@ -1,0 +1,17 @@
+[tool.poetry]
+authors = ["laricko <ttttmmm6432@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.3"
+fastapi = "^0.111.0"
+gunicorn = "^22.0.0"
+uvicorn = {extras = ["standard"], version = "^0.30.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
